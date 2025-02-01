@@ -1,0 +1,2 @@
+# gcal-slack-notifier
+Googleカレンダーに登録されたイベント情報をSlackに通知するbotプログラムです。GASで実装されています。
