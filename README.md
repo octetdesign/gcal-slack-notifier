@@ -98,21 +98,42 @@ Google カレンダーには以下の要領でイベントデータを登録し�
 
 #### command
 
+##### clasp のインストール
+
+```shell
+npm install -g @google/clasp
+```
+
+> global へのインストールなので nodenv を使用している場合は上記コマンド後に`nodenv rehash`を忘れずに。
+
+##### プロジェクトの初期化
+
 ```shell
 cd gcal-slack-notifier
 clasp login
 clasp create --type standalone --rootDir ./src --title GCalSlackNotifier
 ```
 
+clasp の設定ファイル`.clasp.json`が`src`ディレクトリに出力される。
+`src`ディレクトリにあると後述の`push`や`open`が正常に動作しないので、このファイルを`gcal-slack-notifier`に移動する。
+
+```json
+{ "scriptId": "1qYoD9lyLu1C8fE-DMA37exINS6rTRMadhZRYS2YniCJ1MkCQH_ZfFaOp", "rootDir": "./src" }
+```
+
+##### ソースを GAS にプッシュする
+
 ```shell
+cd gcal-slack-notifier
 clasp push
 ```
 
+##### GAS を開く
+
 ```shell
+cd gcal-slack-notifier
 clasp open
 ```
-
-🌸`.clasp.json` の場所に注意
 
 ### ソースファイル概要
 
