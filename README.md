@@ -102,7 +102,7 @@ GAS の「プロジェクトの設定」で以下のスクリプトプロパテ�
 | ---------------------------- | ------------------------------------------------------------------------ | :--: |
 | `System.SlackWebhookUrl`     | Slack の Webhook URL                                                     |  ○   |
 | `System.GoogleCalendarId`    | Google カレンダー ID                                                     |  ○   |
-| `System.GoogleCalendarUrl`   | Google カレンダーの URL                                                  |      |
+| `System.GoogleCalendarUrl`   | Google カレンダーの URL                                                  |  ○   |
 | `System.ChatGptApiKey`       | ChatGPT の API キー。未指定の場合は要約が出力されません。                |      |
 | `System.DevelopmentMode`     | 開発モードで動作させる場合は`true`を指定                                 |      |
 | `System.ResetNotifiedEvents` | 通知済みイベントをリセットする場合は`true`を指定（開発モード時のみ有効） |      |
