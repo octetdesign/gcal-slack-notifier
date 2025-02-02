@@ -67,14 +67,12 @@ _※以下の手順ではプロジェクトのディレクトリが `gcal-slack-
    - Web ブラウザが起動して GAS へのログインを要求されるので、ログインをして下さい。
 1. プロジェクトの初期化
    ```shell
-   clasp create --type standalone --rootDir ./src --title GCalSlackNotifier
+   clasp create --type standalone --rootDir ./ --title GCalSlackNotifier
    ```
-   - clasp の設定ファイル`.clasp.json`が`src`ディレクトリに出力されます。ファイルの内容は以下のような感じです。
+   - clasp の設定ファイル`.clasp.json`が作成されます。ファイルの内容は以下のような感じです。
    ```json
-   { "scriptId": "????_YOUR_SCRIPT_ID_????", "rootDir": "./src" }
+   { "scriptId": "????_YOUR_SCRIPT_ID_????", "rootDir": "./" }
    ```
-1. `.clasp.json`ファイルの移動
-   - `.clasp.json`が`src`ディレクトリにあると、後述の`push`や`open`が正常に動作しないので、このファイルを`gcal-slack-notifier`ディレクトリに移動して下さい。
 
 ### GAS へプログラムのアップロード
 
