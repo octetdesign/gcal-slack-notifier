@@ -57,7 +57,9 @@ Google カレンダーに登録されたイベント情報を Slack に通知す
 
 ### clasp のインストールと設定
 
-この bot プログラムは clasp (Command Line Apps Script Projects)を使用して開発されています。
+この bot プログラムは clasp を使用して開発されています。
+
+[google/clasp: 🔗 Command Line Apps Script Projects](https://github.com/google/clasp)
 
 clasp を使用することで GAS のプログラムをローカルで開発し、ソースファイルを git で管理することができます。（GAS へのプログラムのアップロードは clasp のコマンドで行います。詳しくは後述。）
 
