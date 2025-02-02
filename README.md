@@ -206,10 +206,10 @@ gcal-slack-notifier/
       prompt.js : ChatGPTに送信するプロンプトに関する設定
     modules/
       *.js : 各種モジュール
-    appsscript.json : アプリケーション定義ファイル
     notifyNewEvents.js : 新着イベント通知機能
     notifyWeeklyEvents.js : 週次イベント通知機能
   .clasp.json : claspの設定ファイル
+  appsscript.json : アプリケーション定義ファイル
   README.md : このファイル
 ```
 
