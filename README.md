@@ -30,7 +30,10 @@ Google カレンダーに登録されたイベント情報を Slack に通知す
 - Google カレンダーのイベントデータを Google Apps Script (GAS) のプログラムで定期的にチェックし、新着があったら Slack に投稿します。
 - bot プログラムの定期的な実行には GAS のタイマー実行機能（時間手動型トリガー）の仕組みを使用します。
 - イベントの要約作成には ChatGPT の API を使用します。
+  - モデルは `gpt-4o-mini` `gpt-4o` で動作確認済みです。
 - Slack への通知には Incoming-Webhook を使用します。
+  - カスタムインテグレーションの Incoming-Webhook で動作確認済です。
+  - Slack App の Incoming-Webhook では username やアイコンの指定が無視されてしまうようです。（設定による？）
 
 > セットアップさえできてしまえば、後は Google カレンダーにイベントを登録するだけで自動的に Slack に通知がされるようになります。
 
