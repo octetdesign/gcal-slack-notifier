@@ -41,10 +41,19 @@ Google カレンダーに登録されたイベント情報を Slack に通知す
 
 ### 設定の流れ
 
+1. リポジトリのダウンロード
 1. clasp のインストールと設定
 1. GAS へプログラムのアップロード
 1. GAS プロジェクトの設定
 1. 実行スケジュールの設定
+
+### リポジトリのダウンロード
+
+このリポジトリからファイル一式をダウンロードします。
+
+<https://github.com/octetdesign/gcal-slack-notifier/tree/main>
+
+`main` ブランチのファイルを `Download Zip` でダウンロードして下さい。（`Download Zip`は`[<> Code]`ボタンを押すと表示されます。）
 
 ### clasp のインストールと設定
 
